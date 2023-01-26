@@ -1,0 +1,451 @@
+CRITICAL - 2022-10-13 09:14:41 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 09:40:30 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 09:42:33 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 09:47:33 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 09:57:48 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 10:02:15 --> Call to a member function withGroup() on bool
+in ROOTPATH/modules/SyncMhs/Controllers/SyncMhs.php on line 54.
+ 1 SYSTEMPATH/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 10:07:59 --> Argument 1 passed to CodeIgniter\BaseModel::insertBatch() must be of the type array or null, object given, called in /Users/ivan/Codeigniter/umsu-academy/modules/SyncMhs/Controllers/SyncMhs.php on line 57
+in SYSTEMPATH/BaseModel.php on line 774.
+ 1 ROOTPATH/modules/SyncMhs/Controllers/SyncMhs.php(57): CodeIgniter\BaseModel->insertBatch(Object(Myth\Auth\Entities\User))
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 10:10:16 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 10:14:21 --> Argument 1 passed to CodeIgniter\BaseModel::insertBatch() must be of the type array or null, object given, called in /Users/ivan/Codeigniter/umsu-academy/modules/SyncMhs/Controllers/SyncMhs.php on line 54
+in SYSTEMPATH/BaseModel.php on line 774.
+ 1 ROOTPATH/modules/SyncMhs/Controllers/SyncMhs.php(54): CodeIgniter\BaseModel->insertBatch(Object(Myth\Auth\Entities\User))
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 10:21:11 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 10:24:09 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 10:26:33 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 10:29:37 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-13 11:12:57 --> ErrorException: pg_query(): Query failed: FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Models/UserModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/umsu-academy/modules/SyncMhs/Controllers/SyncMhs.php(51): Myth\Auth\Models\UserModel->withGroup('Mahasiswa')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-13 11:12:57 --> pg_query(): Query failed: FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "auth_groups"
+WHERE "name" = \'Mahasiswa\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "auth_groups"
+WHERE "name" = \'Mahasiswa\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "auth_groups"
+WHERE "name" = \'Mahasiswa\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "auth_groups"
+WHERE "name" = :name:', [...], false)
+ 6 VENDORPATH/myth/auth/src/Models/UserModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/SyncMhs/Controllers/SyncMhs.php(51): Myth\Auth\Models\UserModel->withGroup('Mahasiswa')
+ 8 SYSTEMPATH/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 11:12:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:19:38 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:29:09 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:41:59 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:45:06 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', '36bv49ovokun2uk80f20ejsdo22rt2gk', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '36bv49ovokun2uk80f20ejsdo22rt2gk', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 11:45:06 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', '36bv49ovokun2uk...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '36bv49ovokun2uk...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:48:02 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:51:53 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 11:57:43 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:04:04 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:06:46 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:09:28 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:12:10 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:14:29 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'oeecemgpbajg5grske5b5604qlvgi2fr', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'oeecemgpbajg5grske5b5604qlvgi2fr', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 12:14:29 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'oeecemgpbajg5gr...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'oeecemgpbajg5gr...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:18:27 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:21:31 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 12:23:22 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-13 12:39:07 --> ErrorException: pg_query(): Query failed: could not receive data from server: Operation timed out in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Models/UserModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/umsu-academy/modules/SyncMhs/Controllers/SyncMhs.php(51): Myth\Auth\Models\UserModel->withGroup('Mahasiswa')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-13 12:39:07 --> pg_query(): Query failed: could not receive data from server: Operation timed out
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: could not receive data from server: Operation timed out', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "auth_groups"
+WHERE "name" = \'Mahasiswa\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "auth_groups"
+WHERE "name" = \'Mahasiswa\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "auth_groups"
+WHERE "name" = \'Mahasiswa\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "auth_groups"
+WHERE "name" = :name:', [...], false)
+ 6 VENDORPATH/myth/auth/src/Models/UserModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/SyncMhs/Controllers/SyncMhs.php(51): Myth\Auth\Models\UserModel->withGroup('Mahasiswa')
+ 8 SYSTEMPATH/CodeIgniter.php(898): Modules\SyncMhs\Controllers\SyncMhs->syncAccount()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\SyncMhs\Controllers\SyncMhs))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 12:39:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:34:52 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:37:04 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:39:15 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:41:26 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:42:51 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'lanp0luf778j505pbqhicib7mqa37l87', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'lanp0luf778j505pbqhicib7mqa37l87', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 14:42:51 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'lanp0luf778j505...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'lanp0luf778j505...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:52:07 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 14:56:36 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:00:31 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:02:42 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:04:53 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:07:04 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:08:29 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', '9qkfrdl9k5plhl88pkve8fs0r54cp3to', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '9qkfrdl9k5plhl88pkve8fs0r54cp3to', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 15:08:29 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', '9qkfrdl9k5plhl8...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '9qkfrdl9k5plhl8...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:14:56 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:17:08 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:19:19 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:21:30 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:22:54 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'nqu26k1pi3ne10753mqunjrk3tvmk2b5', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'nqu26k1pi3ne10753mqunjrk3tvmk2b5', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 15:22:54 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'nqu26k1pi3ne107...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'nqu26k1pi3ne107...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:26:25 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:28:36 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:30:47 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:32:58 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:34:22 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', '86io2ad06g295rc5nh85p7m9j56vi262', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '86io2ad06g295rc5nh85p7m9j56vi262', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 15:34:22 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', '86io2ad06g295rc...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '86io2ad06g295rc...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:37:23 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:39:34 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:41:46 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:43:57 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 15:45:20 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'dhobhab1v44phqsgp5fhc9kletj87b5a', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'dhobhab1v44phqsgp5fhc9kletj87b5a', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 15:45:20 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'dhobhab1v44phqs...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'dhobhab1v44phqs...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 16:00:52 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 16:03:03 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 16:05:15 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 16:07:26 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-13 16:08:50 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'emsv9om5qhavbn6vrpnr01u6uk0366cc', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'emsv9om5qhavbn6vrpnr01u6uk0366cc', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-13 16:08:50 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'emsv9om5qhavbn6...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'emsv9om5qhavbn6...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

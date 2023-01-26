@@ -1,0 +1,755 @@
+ERROR - 2022-10-31 09:06:20 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(962): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Controllers/AuthController.php(29): service('session')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(860): Myth\Auth\Controllers\AuthController->__construct()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#21 {main}
+CRITICAL - 2022-10-31 09:06:20 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(962): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Controllers/AuthController.php(29): service('session')
+17 SYSTEMPATH/CodeIgniter.php(860): Myth\Auth\Controllers\AuthController->__construct()
+18 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+19 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:06:30 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:06:30 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:06:32 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:06:32 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:06:41 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #230, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:06:41 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:07:19 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:07:19 --> pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:07:39 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:07:39 --> pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:07:47 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:07:47 --> pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;null&quot; does not exist
+LINE 2: FROM &quot;null&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "null"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:08:07 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:08:07 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:08:08 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:08:08 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:08:10 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:08:10 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-31 09:08:19 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^ in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT encode(d...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(d...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(d...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(d...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb...')
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#19 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#22 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#23 {main}
+CRITICAL - 2022-10-31 09:08:19 --> pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ci_session&quot; does not exist
+LINE 2: FROM &quot;ci_session&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = \'7vaij3rg24crflb9gpgvm5vdgc1233pg\'
+AND "ip_address" = \'::1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT encode(data, \'base64\') AS data
+FROM "ci_session"
+WHERE "id" = :id:
+AND "ip_address" = :ip_address:', [...], false)
+ 6 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 7 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('7vaij3rg24crflb9gpgvm5vdgc1233pg')
+ 8 SYSTEMPATH/Session/Session.php(918): session_start()
+ 9 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+10 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+11 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+12 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+13 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+15 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+16 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+17 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+18 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+19 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+21 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

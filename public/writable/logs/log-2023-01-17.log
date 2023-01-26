@@ -1,0 +1,26 @@
+CRITICAL - 2023-01-17 16:00:23 --> Undefined property: Modules\Dashboard\Controllers\Dashboard::$load
+in ROOTPATH/modules/Dashboard/Controllers/Dashboard.php on line 35.
+ 1 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Modules\\Dashboard\\Controllers\\Dashboard::$load', 'ROOTPATH/modules/Dashboard/Controllers/Dashboard.php', 35, [])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Dashboard\Controllers\Dashboard->test()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-17 16:01:47 --> 3 : 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('3', 'ROOTPATH/public')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'curl -d "grant_type=password" -d "client_id=BPI9018" -d "client_secret=6b8cc617-86da-4436-a75b-0b647e0478a9" -d "username=9018" -d "password=9018" https://account.makaramas.com/auth/realms/bpi-dev/protocol/openid-connect/token')
+ 4 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(35): CodeIgniter\HTTP\CURLRequest->request('GET', 'curl -d "grant_type=password" -d "client_id=BPI9018" -d "client_secret=6b8cc617-86da-4436-a75b-0b647e0478a9" -d "username=9018" -d "password=9018" https://account.makaramas.com/auth/realms/bpi-dev/protocol/openid-connect/token')
+ 5 SYSTEMPATH/CodeIgniter.php(898): Modules\Dashboard\Controllers\Dashboard->test()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-17 16:02:20 --> Call to undefined method CodeIgniter\HTTP\CURLRequest::simple_get()
+in ROOTPATH/modules/Dashboard/Controllers/Dashboard.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(898): Modules\Dashboard\Controllers\Dashboard->test()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

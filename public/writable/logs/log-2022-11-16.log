@@ -1,0 +1,88 @@
+CRITICAL - 2022-11-16 15:21:05 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH/myth/auth/src/Password.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-16 15:21:16 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'uh0dptfgvg4036nncv53tp9fv5dfrn0s', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'uh0dptfgvg4036nncv53tp9fv5dfrn0s', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-16 15:21:16 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', 'uh0dptfgvg4036n...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', 'uh0dptfgvg4036n...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-16 15:23:35 --> Undefined offset: 0
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 59.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 59, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-16 15:29:33 --> Undefined offset: 0
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 59.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 59, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-16 15:29:36 --> Undefined offset: 0
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 59.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 59, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-16 15:29:37 --> Undefined offset: 0
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 59.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 59, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-16 17:45:37 --> Cannot modify header information - headers already sent
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent', 'SYSTEMPATH/HTTP/ResponseTrait.php', 749, [...])
+ 2 SYSTEMPATH/HTTP/ResponseTrait.php(749): setcookie('ci_session', '0tioibr9fqviq11rdqcbdsfjsgbvbueg', [...])
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '0tioibr9fqviq11rdqcbdsfjsgbvbueg', [...])
+ 4 SYSTEMPATH/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+ 5 SYSTEMPATH/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+ 6 SYSTEMPATH/CodeIgniter.php(1076): CodeIgniter\HTTP\Response->send()
+ 7 SYSTEMPATH/CodeIgniter.php(510): CodeIgniter\CodeIgniter->sendResponse()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-16 17:45:37 --> Uncaught ErrorException: Cannot modify header information - headers already sent in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:749
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/Users/ivan/Cod...', 749, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(749): setcookie('ci_session', '0tioibr9fqviq11...', Array)
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(725): CodeIgniter\HTTP\Response->doSetCookie('ci_session', '0tioibr9fqviq11...', Array)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(705): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(445): CodeIgniter\HTTP\Response->sendCookies()
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigni
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 749.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-16 17:52:35 --> Undefined offset: 0
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 432.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(432): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 432, [...])
+ 2 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(85): Modules\Mahasiswa\Controllers\Mahasiswa->cekJadwalLunas()
+ 3 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

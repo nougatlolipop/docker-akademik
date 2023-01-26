@@ -1,0 +1,49 @@
+[{
+        "id": "1",
+        "title": "KRS",
+        "subTitle": "Penginputan dan Cetak KRS",
+        "icon": "las la-address-book",
+        "color": "FF9F29",
+        "link": "krs"
+    },
+    {
+        "id": "2",
+        "title": "KHS",
+        "subTitle": "Cetak KHS",
+        "icon": "las la-book-open",
+        "color": "4C3575",
+        "link": "khs"
+    },
+    {
+        "id": "3",
+        "title": "Transkrip",
+        "subTitle": "Cetak Transkrip Nilai",
+        "icon": "las la-newspaper",
+        "color": "90C8AC",
+        "link": "transkrip"
+    },
+    {
+        "id": "4",
+        "title": "Pembayaran",
+        "subTitle": "Tagihan dan Riwayat",
+        "icon": "las la-money-bill-wave-alt",
+        "color": "4CACBC",
+        "link": "pembayaran"
+    },
+    {
+        "id": "5",
+        "title": "Jadwal",
+        "subTitle": "Info Jadwal Kuliah",
+        "icon": "las la-calendar-week",
+        "color": "FF5D5D",
+        "link": "jadwal"
+    },
+    {
+        "id": "6",
+        "title": "Aktivitas",
+        "subTitle": "Info Aktivitas Akademik",
+        "icon": "las la-user-graduate",
+        "color": "C69749",
+        "link": "kegiatan"
+    }
+]

@@ -1,0 +1,431 @@
+[{
+        "id": "1",
+        "nama": "Data",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "las la-server",
+        "pages": ""
+    },
+    {
+        "id": "2",
+        "nama": "Kurikulum",
+        "parent": "1",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-book-open",
+        "pages": ""
+    },
+    {
+        "id": "3",
+        "nama": "Jenis Kurikulum",
+        "parent": "2",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/kurikulumType"
+    },
+    {
+        "id": "4",
+        "nama": "Data Kurikulum",
+        "parent": "2",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/kurikulum"
+    },
+    {
+        "id": "5",
+        "nama": "Mata Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-book",
+        "pages": ""
+    },
+    {
+        "id": "7",
+        "nama": "Jenis Mata Kuliah",
+        "parent": "5",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "las la-home iq-arrow-left",
+        "pages": "/matkulType"
+    },
+    {
+        "id": "6",
+        "nama": "Data Mata Kuliah",
+        "parent": "5",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/matkul"
+    },
+    {
+        "id": "10",
+        "nama": "Angkatan",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-tie",
+        "pages": "/angkatan"
+    },
+    {
+        "id": "8",
+        "nama": "Fakultas",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-city",
+        "pages": "/fakultas"
+    },
+    {
+        "id": "9",
+        "nama": "Prodi",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-building",
+        "pages": "/prodi"
+    },
+    {
+        "id": "11",
+        "nama": "Kelas",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-store",
+        "pages": "/kelas"
+    },
+    {
+        "id": "12",
+        "nama": "Ruang Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-warehouse",
+        "pages": "/ruangan"
+    },
+    {
+        "id": "13",
+        "nama": "Kelompok Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-friends",
+        "pages": "/kelompokKuliah"
+    },
+    {
+        "id": "14",
+        "nama": "Program Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-university",
+        "pages": "/programKuliah"
+    },
+    {
+        "id": "15",
+        "nama": "Waktu Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "lar la-clock",
+        "pages": "/waktuKuliah"
+    },
+    {
+        "id": "40",
+        "nama": "Jadwal Waktu Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-day",
+        "pages": "/jadwalWaktu"
+    },
+    {
+        "id": "16",
+        "nama": "Tahun Ajaran",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-week",
+        "pages": "/tahunAjaran"
+    },
+    {
+        "id": "17",
+        "nama": "Semester",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-check",
+        "pages": "/semester"
+    },
+    {
+        "id": "18",
+        "nama": "Studi Level",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-times",
+        "pages": "/studiLevel"
+    },
+    {
+        "id": "39",
+        "nama": "Data Dosen",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-graduate",
+        "pages": "/dosen"
+    },
+    {
+        "id": "19",
+        "nama": "Setting",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "las la-cog",
+        "pages": ""
+    },
+    {
+        "id": "37",
+        "nama": "Dosen Prodi",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user",
+        "pages": "/setDosenProdi"
+    },
+    {
+        "id": "44",
+        "nama": "Rombel Dosen PA",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-users-cog",
+        "pages": "/setRombel"
+    },
+    {
+        "id": "38",
+        "nama": "Jabatan Struktural",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-check",
+        "pages": "/setJabatanStruktural"
+    },
+    {
+        "id": "20",
+        "nama": "Jadwal Akademik",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-week",
+        "pages": "/setJadwalAkademik"
+    },
+    {
+        "id": "24",
+        "nama": "Prodi Prog. Kuliah",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-building",
+        "pages": "/setProdiProgKuliah"
+    },
+    {
+        "id": "25",
+        "nama": "Penawaran Akademik",
+        "parent": "19",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-school",
+        "pages": ""
+    },
+    {
+        "id": "26",
+        "nama": "Kurikulum Ditawarkan",
+        "parent": "25",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/setKurikulumDitawarkan"
+    },
+    {
+        "id": "28",
+        "nama": "Mata Kuliah Kurikulum",
+        "parent": "25",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/setMatkulKurikulum"
+    },
+    {
+        "id": "27",
+        "nama": "Mata Kuliah Ditawarkan",
+        "parent": "25",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/setMatkulDitawarkan"
+    },
+    {
+        "id": "23",
+        "nama": "Roster Kuliah",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-day",
+        "pages": "/setRosterKuliah"
+    },
+    {
+        "id": "28",
+        "nama": "Proses",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "las la-graduation-cap",
+        "pages": ""
+    },
+    {
+        "id": "29",
+        "nama": "KRS",
+        "parent": "28",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-address-book",
+        "pages": "/krsMahasiswa"
+    },
+    {
+        "id": "33",
+        "nama": "Nilai",
+        "parent": "28",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-marker",
+        "pages": ""
+    },
+    {
+        "id": "34",
+        "nama": "Per Mahasiswa",
+        "parent": "33",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/nilaiMahasiswa"
+    },
+    {
+        "id": "35",
+        "nama": "Per Kelas",
+        "parent": "33",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/nilaiKelas"
+    },
+    {
+        "id": "34",
+        "nama": "Per Mata Kuliah",
+        "parent": "33",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/nilaiMataKuliah"
+    },
+    {
+        "id": "35",
+        "nama": "Konversi",
+        "parent": "28",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-percent",
+        "pages": ""
+    },
+    {
+        "id": "36",
+        "nama": "Mata Kuliah",
+        "parent": "35",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/konverMatkul"
+    },
+    {
+        "id": "37",
+        "nama": "Nilai",
+        "parent": "35",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/konverNilai"
+    },
+    {
+        "id": "41",
+        "nama": "User",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "lar la-user",
+        "pages": ""
+    },
+    {
+        "id": "42",
+        "nama": "Role Pengguna",
+        "parent": "41",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-tag",
+        "pages": "/userRole"
+    },
+    {
+        "id": "43",
+        "nama": "Manajemen Akun",
+        "parent": "41",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-cog",
+        "pages": "/manajemenAkun"
+    }
+]

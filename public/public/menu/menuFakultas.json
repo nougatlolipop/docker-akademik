@@ -1,0 +1,261 @@
+[{
+        "id": "1",
+        "nama": "Data",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "las la-server",
+        "pages": ""
+    },
+    {
+        "id": "78",
+        "nama": "Mahasiswa",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-graduate",
+        "pages": "/dataMahasiswa"
+    },
+    {
+        "id": "9",
+        "nama": "Prodi",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-building",
+        "pages": "/prodi"
+    },
+    {
+        "id": "47",
+        "nama": "Nilai Prodi",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-tools",
+        "pages": "/nilaiProdi"
+    },
+    {
+        "id": "48",
+        "nama": "SKS Disetujui",
+        "parent": "45",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/sks"
+    },
+    {
+        "id": "5",
+        "nama": "Mata Kuliah",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-book",
+        "pages": "/matkul"
+    },
+    {
+        "id": "19",
+        "nama": "Setting",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "las la-cog",
+        "pages": ""
+    },
+    {
+        "id": "37",
+        "nama": "Dosen Prodi",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user",
+        "pages": "/setDosenProdi"
+    },
+    {
+        "id": "20",
+        "nama": "Jadwal Akademik",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-week",
+        "pages": "/setJadwalAkademik"
+    },
+    {
+        "id": "24",
+        "nama": "Prodi Prog. Kuliah",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-building",
+        "pages": "/setProdiProgKuliah"
+    },
+    {
+        "id": "44",
+        "nama": "Rombel Dosen PA",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-users-cog",
+        "pages": "/setRombel"
+    },
+    {
+        "id": "25",
+        "nama": "Penawaran Akademik",
+        "parent": "19",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-school",
+        "pages": ""
+    },
+    {
+        "id": "26",
+        "nama": "Kurikulum Ditawarkan",
+        "parent": "25",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/setKurikulumDitawarkan"
+    },
+    {
+        "id": "28",
+        "nama": "Mata Kuliah Kurikulum",
+        "parent": "25",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/setMatkulKurikulum"
+    },
+    {
+        "id": "27",
+        "nama": "Mata Kuliah Ditawarkan",
+        "parent": "25",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/setMatkulDitawarkan"
+    },
+    {
+        "id": "23",
+        "nama": "Roster Kuliah",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-calendar-day",
+        "pages": "/setRosterKuliah"
+    },
+    {
+        "id": "73",
+        "nama": "Biaya Praktikum",
+        "parent": "19",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-vials",
+        "pages": "/setBiayaPraktikum"
+    },
+    {
+        "id": "28",
+        "nama": "Akademik",
+        "parent": "0",
+        "level": "title",
+        "type": "",
+        "status": true,
+        "icon": "las la-graduation-cap",
+        "pages": ""
+    },
+    {
+        "id": "29",
+        "nama": "KRS",
+        "parent": "28",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-address-book",
+        "pages": "/krsMahasiswa"
+    },
+    {
+        "id": "30",
+        "nama": "KHS",
+        "parent": "28",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-marker",
+        "pages": ""
+    },
+    {
+        "id": "53",
+        "nama": "Per Mahasiswa",
+        "parent": "30",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/khsMahasiswa"
+    },
+    {
+        "id": "54",
+        "nama": "Per Kelas",
+        "parent": "30",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/khsKelas"
+    },
+    {
+        "id": "35",
+        "nama": "Konversi Nilai",
+        "parent": "28",
+        "level": "parent",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-percent",
+        "pages": ""
+    },
+    {
+        "id": "51",
+        "nama": "Transfer",
+        "parent": "35",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/konversi"
+    },
+    {
+        "id": "52",
+        "nama": "MBKM",
+        "parent": "35",
+        "level": "child",
+        "type": "",
+        "status": true,
+        "icon": "",
+        "pages": "/konversiMbkm"
+    },
+    {
+        "id": "50",
+        "nama": "Transkrip Nilai",
+        "parent": "28",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-book-reader",
+        "pages": "/transkrip"
+    }
+]

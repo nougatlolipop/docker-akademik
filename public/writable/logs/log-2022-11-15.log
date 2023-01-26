@@ -1,0 +1,541 @@
+ERROR - 2022-11-15 10:59:49 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+#4 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#6 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('mahasiswa', 'before')
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#21 {main}
+CRITICAL - 2022-11-15 10:59:49 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(918): session_start()
+ 4 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+12 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+13 VENDORPATH/myth/auth/src/Filters/RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+14 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+15 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('mahasiswa', 'before')
+16 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-15 11:18:23 --> count(): Parameter must be an array or an object that implements Countable
+in ROOTPATH/modules/Mahasiswa/Views/mahasiswa.php on line 254.
+ 1 ROOTPATH/modules/Mahasiswa/Views/mahasiswa.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'ROOTPATH/modules/Mahasiswa/Views/mahasiswa.php', 254, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Mahasiswa/Views/mahasiswa.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('Modules\\Mahasiswa\\Views\\mahasiswa', [], true)
+ 5 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(89): view('Modules\\Mahasiswa\\Views\\mahasiswa', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-11-15 11:44:29 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;payment&quot;
+LINE 26: ...on_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;t...
+                                                              ^
+QUERY:  SELECT
+		keu_tagihan.&quot;tagihId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan.&quot;tagihKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan.&quot;tagihMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		(detail-&gt;&gt;'item')::INT AS &quot;jenisBiayaId&quot;,
+		(json_line_item-&gt;&gt;'tahap')::INT AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		(SELECT concat('')::varchar) AS &quot;mkNama&quot;,
+		((detail -&gt;&gt;'nominal')::BIGINT) - ((detail-&gt;&gt;'diskon')::INT) AS &quot;nominal&quot;,
+		(json_line_item-&gt;&gt;'tanggalMulai')::TIMESTAMP AS &quot;startDate&quot;,
+		(json_line_item-&gt;&gt;'tanggalSelesai')::TIMESTAMP AS &quot;endDate&quot;,
+		(json_line_item-&gt;&gt;'tahunAjar') ::INT AS &quot;tahunAjarId&quot;,
+		(SELECT dt_tahun_ajaran.&quot;tahunAjaranNama&quot; FROM dt_tahun_ajaran WHERE dt_tahun_ajaran.&quot;tahunAjaranId&quot; = (json_line_item-&gt;&gt;'tahunAjar') ::INT) AS &quot;tahunAjar&quot;,
+		(json_line_item-&gt;&gt;'isForceToPay')::BIT AS &quot;forceToPay&quot;,
+		(detail-&gt;&gt;'diskon')::INT AS &quot;diskon&quot;,
+		CASE WHEN ((detail-&gt;&gt;'diskon')::INT = 0) THEN 0 ELSE (SELECT &quot;refJenisDiskonPersen&quot; FROM ref_jenis_diskon WHERE &quot;refJenisDiskonId&quot; = 1) END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan,
+	LATERAL JSON_ARRAY_ELEMENTS ( keu_tagihan.&quot;tagihDetail&quot; -&gt; 'data' ) json_line_item,
+	LATERAL JSON_ARRAY_ELEMENTS ( json_line_item -&gt; 'detail' ) detail ( detail )
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = ( detail -&gt;&gt; 'item' ) :: INT 
+WHERE
+	keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;tahap&quot; FROM function_tampil_payment_all_mhs_tahun(npm,tahun)) 
+	OR ( json_line_item -&gt;&gt; 'tanggalMulai' ) :: TIMESTAMP &lt;= NOW( ) 
+	AND keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN (SELECT payment.&quot;tahap&quot; from function_tampil_payment_all(npm,tahun))
+	UNION ALL
+SELECT
+    keu_tagihan_lain.&quot;tagihLainId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan_lain.&quot;tagihLainKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot; AS &quot;jenisBiayaId&quot;,
+		keu_tagihan_lain.&quot;tagihLainTahapBayar&quot; AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		dt_matkul.&quot;matkulNama&quot; AS &quot;mkNama&quot;,
+		(keu_tagihan_lain.&quot;tagihLainNominal&quot;) - (keu_tagihan_lain.&quot;tagihLainDiskon&quot;) AS &quot;nominal&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalMulai&quot; AS &quot;startDate&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; AS &quot;endDate&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranId&quot; AS &quot;tahunAjarId&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranNama&quot; AS &quot;tahunAjar&quot;,
+		keu_tagihan_lain.&quot;tagihLainIsForceToPay&quot; AS &quot;forceToPay&quot;,
+		keu_tagihan_lain.&quot;tagihLainDiskon&quot; AS &quot;diskon&quot;,
+		CASE WHEN (keu_tagihan_lain.&quot;tagihLainDiskon&quot; = 0) THEN 0 ELSE 0 END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan_lain
+	LEFT JOIN dt_tahun_ajaran ON dt_tahun_ajaran.&quot;tahunAjaranId&quot; = keu_tagihan_lain.&quot;tagihLainTahunAjaran&quot;
+	LEFT JOIN keu_tarif_biaya_lain ON keu_tarif_biaya_lain.&quot;tarifLainId&quot; = keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot;
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = keu_tarif_biaya_lain.&quot;tarifLainJenisBiayaId&quot;
+	LEFT JOIN setting_matkul_tawarkan ON setting_matkul_tawarkan.&quot;setMatkulTawarId&quot; = keu_tarif_biaya_lain.&quot;tarifLainMatkulTawarId&quot;
+	LEFT JOIN setting_matkul_kurikulum ON setting_matkul_kurikulum.&quot;setMatkulKurikulumId&quot; = setting_matkul_tawarkan.&quot;setMatkulTawarMatkulKurikulumId&quot;
+	LEFT JOIN dt_matkul ON dt_matkul.&quot;matkulId&quot; = setting_matkul_kurikulum.&quot;setMatkulKurikulumMatkulId&quot;
+WHERE
+	keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+	OR keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; &lt;= NOW() AND keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm 
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+CONTEXT:  PL/pgSQL function function_tampil_tagihan(text,text) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/modules/KeuTeller/Models/KeuTellerModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/umsu-academy/modules/Mahasiswa/Controllers/Mahasiswa.php(71): Modules\KeuTeller\Models\KeuTellerModel->getTagihan(Array)
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-11-15 11:44:29 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;payment&quot;
+LINE 26: ...on_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;t...
+                                                              ^
+QUERY:  SELECT
+		keu_tagihan.&quot;tagihId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan.&quot;tagihKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan.&quot;tagihMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		(detail-&gt;&gt;'item')::INT AS &quot;jenisBiayaId&quot;,
+		(json_line_item-&gt;&gt;'tahap')::INT AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		(SELECT concat('')::varchar) AS &quot;mkNama&quot;,
+		((detail -&gt;&gt;'nominal')::BIGINT) - ((detail-&gt;&gt;'diskon')::INT) AS &quot;nominal&quot;,
+		(json_line_item-&gt;&gt;'tanggalMulai')::TIMESTAMP AS &quot;startDate&quot;,
+		(json_line_item-&gt;&gt;'tanggalSelesai')::TIMESTAMP AS &quot;endDate&quot;,
+		(json_line_item-&gt;&gt;'tahunAjar') ::INT AS &quot;tahunAjarId&quot;,
+		(SELECT dt_tahun_ajaran.&quot;tahunAjaranNama&quot; FROM dt_tahun_ajaran WHERE dt_tahun_ajaran.&quot;tahunAjaranId&quot; = (json_line_item-&gt;&gt;'tahunAjar') ::INT) AS &quot;tahunAjar&quot;,
+		(json_line_item-&gt;&gt;'isForceToPay')::BIT AS &quot;forceToPay&quot;,
+		(detail-&gt;&gt;'diskon')::INT AS &quot;diskon&quot;,
+		CASE WHEN ((detail-&gt;&gt;'diskon')::INT = 0) THEN 0 ELSE (SELECT &quot;refJenisDiskonPersen&quot; FROM ref_jenis_diskon WHERE &quot;refJenisDiskonId&quot; = 1) END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan,
+	LATERAL JSON_ARRAY_ELEMENTS ( keu_tagihan.&quot;tagihDetail&quot; -&gt; 'data' ) json_line_item,
+	LATERAL JSON_ARRAY_ELEMENTS ( json_line_item -&gt; 'detail' ) detail ( detail )
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = ( detail -&gt;&gt; 'item' ) :: INT 
+WHERE
+	keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;tahap&quot; FROM function_tampil_payment_all_mhs_tahun(npm,tahun)) 
+	OR ( json_line_item -&gt;&gt; 'tanggalMulai' ) :: TIMESTAMP &lt;= NOW( ) 
+	AND keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN (SELECT payment.&quot;tahap&quot; from function_tampil_payment_all(npm,tahun))
+	UNION ALL
+SELECT
+    keu_tagihan_lain.&quot;tagihLainId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan_lain.&quot;tagihLainKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot; AS &quot;jenisBiayaId&quot;,
+		keu_tagihan_lain.&quot;tagihLainTahapBayar&quot; AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		dt_matkul.&quot;matkulNama&quot; AS &quot;mkNama&quot;,
+		(keu_tagihan_lain.&quot;tagihLainNominal&quot;) - (keu_tagihan_lain.&quot;tagihLainDiskon&quot;) AS &quot;nominal&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalMulai&quot; AS &quot;startDate&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; AS &quot;endDate&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranId&quot; AS &quot;tahunAjarId&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranNama&quot; AS &quot;tahunAjar&quot;,
+		keu_tagihan_lain.&quot;tagihLainIsForceToPay&quot; AS &quot;forceToPay&quot;,
+		keu_tagihan_lain.&quot;tagihLainDiskon&quot; AS &quot;diskon&quot;,
+		CASE WHEN (keu_tagihan_lain.&quot;tagihLainDiskon&quot; = 0) THEN 0 ELSE 0 END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan_lain
+	LEFT JOIN dt_tahun_ajaran ON dt_tahun_ajaran.&quot;tahunAjaranId&quot; = keu_tagihan_lain.&quot;tagihLainTahunAjaran&quot;
+	LEFT JOIN keu_tarif_biaya_lain ON keu_tarif_biaya_lain.&quot;tarifLainId&quot; = keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot;
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = keu_tarif_biaya_lain.&quot;tarifLainJenisBiayaId&quot;
+	LEFT JOIN setting_matkul_tawarkan ON setting_matkul_tawarkan.&quot;setMatkulTawarId&quot; = keu_tarif_biaya_lain.&quot;tarifLainMatkulTawarId&quot;
+	LEFT JOIN setting_matkul_kurikulum ON setting_matkul_kurikulum.&quot;setMatkulKurikulumId&quot; = setting_matkul_tawarkan.&quot;setMatkulTawarMatkulKurikulumId&quot;
+	LEFT JOIN dt_matkul ON dt_matkul.&quot;matkulId&quot; = setting_matkul_kurikulum.&quot;setMatkulKurikulumMatkulId&quot;
+WHERE
+	keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+	OR keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; &lt;= NOW() AND keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm 
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+CONTEXT:  PL/pgSQL function function_tampil_tagihan(text,text) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;payment&quot;
+LINE 26: ...on_line_item -&gt;&gt; \'tahap\' ) :: INT NOT IN ( SELECT payment.&quot;t...
+                                                              ^
+QUERY:  SELECT
+		keu_tagihan.&quot;tagihId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan.&quot;tagihKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan.&quot;tagihMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		(detail-&gt;&gt;\'item\')::INT AS &quot;jenisBiayaId&quot;,
+		(json_line_item-&gt;&gt;\'tahap\')::INT AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		(SELECT concat(\'\')::varchar) AS &quot;mkNama&quot;,
+		((detail -&gt;&gt;\'nominal\')::BIGINT) - ((detail-&gt;&gt;\'diskon\')::INT) AS &quot;nominal&quot;,
+		(json_line_item-&gt;&gt;\'tanggalMulai\')::TIMESTAMP AS &quot;startDate&quot;,
+		(json_line_item-&gt;&gt;\'tanggalSelesai\')::TIMESTAMP AS &quot;endDate&quot;,
+		(json_line_item-&gt;&gt;\'tahunAjar\') ::INT AS &quot;tahunAjarId&quot;,
+		(SELECT dt_tahun_ajaran.&quot;tahunAjaranNama&quot; FROM dt_tahun_ajaran WHERE dt_tahun_ajaran.&quot;tahunAjaranId&quot; = (json_line_item-&gt;&gt;\'tahunAjar\') ::INT) AS &quot;tahunAjar&quot;,
+		(json_line_item-&gt;&gt;\'isForceToPay\')::BIT AS &quot;forceToPay&quot;,
+		(detail-&gt;&gt;\'diskon\')::INT AS &quot;diskon&quot;,
+		CASE WHEN ((detail-&gt;&gt;\'diskon\')::INT = 0) THEN 0 ELSE (SELECT &quot;refJenisDiskonPersen&quot; FROM ref_jenis_diskon WHERE &quot;refJenisDiskonId&quot; = 1) END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan,
+	LATERAL JSON_ARRAY_ELEMENTS ( keu_tagihan.&quot;tagihDetail&quot; -&gt; \'data\' ) json_line_item,
+	LATERAL JSON_ARRAY_ELEMENTS ( json_line_item -&gt; \'detail\' ) detail ( detail )
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = ( detail -&gt;&gt; \'item\' ) :: INT 
+WHERE
+	keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; \'tahap\' ) :: INT NOT IN ( SELECT payment.&quot;tahap&quot; FROM function_tampil_payment_all_mhs_tahun(npm,tahun)) 
+	OR ( json_line_item -&gt;&gt; \'tanggalMulai\' ) :: TIMESTAMP &lt;= NOW( ) 
+	AND keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; \'tahap\' ) :: INT NOT IN (SELECT payment.&quot;tahap&quot; from function_tampil_payment_all(npm,tahun))
+	UNION ALL
+SELECT
+    keu_tagihan_lain.&quot;tagihLainId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan_lain.&quot;tagihLainKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot; AS &quot;jenisBiayaId&quot;,
+		keu_tagihan_lain.&quot;tagihLainTahapBayar&quot; AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		dt_matkul.&quot;matkulNama&quot; AS &quot;mkNama&quot;,
+		(keu_tagihan_lain.&quot;tagihLainNominal&quot;) - (keu_tagihan_lain.&quot;tagihLainDiskon&quot;) AS &quot;nominal&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalMulai&quot; AS &quot;startDate&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; AS &quot;endDate&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranId&quot; AS &quot;tahunAjarId&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranNama&quot; AS &quot;tahunAjar&quot;,
+		keu_tagihan_lain.&quot;tagihLainIsForceToPay&quot; AS &quot;forceToPay&quot;,
+		keu_tagihan_lain.&quot;tagihLainDiskon&quot; AS &quot;diskon&quot;,
+		CASE WHEN (keu_tagihan_lain.&quot;tagihLainDiskon&quot; = 0) THEN 0 ELSE 0 END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan_lain
+	LEFT JOIN dt_tahun_ajaran ON dt_tahun_ajaran.&quot;tahunAjaranId&quot; = keu_tagihan_lain.&quot;tagihLainTahunAjaran&quot;
+	LEFT JOIN keu_tarif_biaya_lain ON keu_tarif_biaya_lain.&quot;tarifLainId&quot; = keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot;
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = keu_tarif_biaya_lain.&quot;tarifLainJenisBiayaId&quot;
+	LEFT JOIN setting_matkul_tawarkan ON setting_matkul_tawarkan.&quot;setMatkulTawarId&quot; = keu_tarif_biaya_lain.&quot;tarifLainMatkulTawarId&quot;
+	LEFT JOIN setting_matkul_kurikulum ON setting_matkul_kurikulum.&quot;setMatkulKurikulumId&quot; = setting_matkul_tawarkan.&quot;setMatkulTawarMatkulKurikulumId&quot;
+	LEFT JOIN dt_matkul ON dt_matkul.&quot;matkulId&quot; = setting_matkul_kurikulum.&quot;setMatkulKurikulumMatkulId&quot;
+WHERE
+	keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = \'0\'
+	OR keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; &lt;= NOW() AND keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm 
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = \'0\'
+CONTEXT:  PL/pgSQL function function_tampil_tagihan(text,text) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC', [], false)
+ 6 ROOTPATH/modules/KeuTeller/Models/KeuTellerModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(71): Modules\KeuTeller\Models\KeuTellerModel->getTagihan([...])
+ 8 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-11-15 11:47:24 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;payment&quot;
+LINE 26: ...on_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;t...
+                                                              ^
+QUERY:  SELECT
+		keu_tagihan.&quot;tagihId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan.&quot;tagihKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan.&quot;tagihMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		(detail-&gt;&gt;'item')::INT AS &quot;jenisBiayaId&quot;,
+		(json_line_item-&gt;&gt;'tahap')::INT AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		(SELECT concat('')::varchar) AS &quot;mkNama&quot;,
+		((detail -&gt;&gt;'nominal')::BIGINT) - ((detail-&gt;&gt;'diskon')::INT) AS &quot;nominal&quot;,
+		(json_line_item-&gt;&gt;'tanggalMulai')::TIMESTAMP AS &quot;startDate&quot;,
+		(json_line_item-&gt;&gt;'tanggalSelesai')::TIMESTAMP AS &quot;endDate&quot;,
+		(json_line_item-&gt;&gt;'tahunAjar') ::INT AS &quot;tahunAjarId&quot;,
+		(SELECT dt_tahun_ajaran.&quot;tahunAjaranNama&quot; FROM dt_tahun_ajaran WHERE dt_tahun_ajaran.&quot;tahunAjaranId&quot; = (json_line_item-&gt;&gt;'tahunAjar') ::INT) AS &quot;tahunAjar&quot;,
+		(json_line_item-&gt;&gt;'isForceToPay')::BIT AS &quot;forceToPay&quot;,
+		(detail-&gt;&gt;'diskon')::INT AS &quot;diskon&quot;,
+		CASE WHEN ((detail-&gt;&gt;'diskon')::INT = 0) THEN 0 ELSE (SELECT &quot;refJenisDiskonPersen&quot; FROM ref_jenis_diskon WHERE &quot;refJenisDiskonId&quot; = 1) END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan,
+	LATERAL JSON_ARRAY_ELEMENTS ( keu_tagihan.&quot;tagihDetail&quot; -&gt; 'data' ) json_line_item,
+	LATERAL JSON_ARRAY_ELEMENTS ( json_line_item -&gt; 'detail' ) detail ( detail )
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = ( detail -&gt;&gt; 'item' ) :: INT 
+WHERE
+	keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;tahap&quot; FROM function_tampil_payment_all_mhs_tahun(npm,tahun)) 
+	OR ( json_line_item -&gt;&gt; 'tanggalMulai' ) :: TIMESTAMP &lt;= NOW( ) 
+	AND keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN (SELECT payment.&quot;tahap&quot; from function_tampil_payment_all_mhs_tahun(npm,tahun))
+	UNION ALL
+SELECT
+    keu_tagihan_lain.&quot;tagihLainId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan_lain.&quot;tagihLainKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot; AS &quot;jenisBiayaId&quot;,
+		keu_tagihan_lain.&quot;tagihLainTahapBayar&quot; AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		dt_matkul.&quot;matkulNama&quot; AS &quot;mkNama&quot;,
+		(keu_tagihan_lain.&quot;tagihLainNominal&quot;) - (keu_tagihan_lain.&quot;tagihLainDiskon&quot;) AS &quot;nominal&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalMulai&quot; AS &quot;startDate&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; AS &quot;endDate&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranId&quot; AS &quot;tahunAjarId&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranNama&quot; AS &quot;tahunAjar&quot;,
+		keu_tagihan_lain.&quot;tagihLainIsForceToPay&quot; AS &quot;forceToPay&quot;,
+		keu_tagihan_lain.&quot;tagihLainDiskon&quot; AS &quot;diskon&quot;,
+		CASE WHEN (keu_tagihan_lain.&quot;tagihLainDiskon&quot; = 0) THEN 0 ELSE 0 END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan_lain
+	LEFT JOIN dt_tahun_ajaran ON dt_tahun_ajaran.&quot;tahunAjaranId&quot; = keu_tagihan_lain.&quot;tagihLainTahunAjaran&quot;
+	LEFT JOIN keu_tarif_biaya_lain ON keu_tarif_biaya_lain.&quot;tarifLainId&quot; = keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot;
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = keu_tarif_biaya_lain.&quot;tarifLainJenisBiayaId&quot;
+	LEFT JOIN setting_matkul_tawarkan ON setting_matkul_tawarkan.&quot;setMatkulTawarId&quot; = keu_tarif_biaya_lain.&quot;tarifLainMatkulTawarId&quot;
+	LEFT JOIN setting_matkul_kurikulum ON setting_matkul_kurikulum.&quot;setMatkulKurikulumId&quot; = setting_matkul_tawarkan.&quot;setMatkulTawarMatkulKurikulumId&quot;
+	LEFT JOIN dt_matkul ON dt_matkul.&quot;matkulId&quot; = setting_matkul_kurikulum.&quot;setMatkulKurikulumMatkulId&quot;
+WHERE
+	keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+	OR keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; &lt;= NOW() AND keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm 
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+CONTEXT:  PL/pgSQL function function_tampil_tagihan(text,text) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/umsu-academy/modules/KeuTeller/Models/KeuTellerModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/umsu-academy/modules/Mahasiswa/Controllers/Mahasiswa.php(71): Modules\KeuTeller\Models\KeuTellerModel->getTagihan(Array)
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-11-15 11:47:24 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;payment&quot;
+LINE 26: ...on_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;t...
+                                                              ^
+QUERY:  SELECT
+		keu_tagihan.&quot;tagihId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan.&quot;tagihKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan.&quot;tagihMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		(detail-&gt;&gt;'item')::INT AS &quot;jenisBiayaId&quot;,
+		(json_line_item-&gt;&gt;'tahap')::INT AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		(SELECT concat('')::varchar) AS &quot;mkNama&quot;,
+		((detail -&gt;&gt;'nominal')::BIGINT) - ((detail-&gt;&gt;'diskon')::INT) AS &quot;nominal&quot;,
+		(json_line_item-&gt;&gt;'tanggalMulai')::TIMESTAMP AS &quot;startDate&quot;,
+		(json_line_item-&gt;&gt;'tanggalSelesai')::TIMESTAMP AS &quot;endDate&quot;,
+		(json_line_item-&gt;&gt;'tahunAjar') ::INT AS &quot;tahunAjarId&quot;,
+		(SELECT dt_tahun_ajaran.&quot;tahunAjaranNama&quot; FROM dt_tahun_ajaran WHERE dt_tahun_ajaran.&quot;tahunAjaranId&quot; = (json_line_item-&gt;&gt;'tahunAjar') ::INT) AS &quot;tahunAjar&quot;,
+		(json_line_item-&gt;&gt;'isForceToPay')::BIT AS &quot;forceToPay&quot;,
+		(detail-&gt;&gt;'diskon')::INT AS &quot;diskon&quot;,
+		CASE WHEN ((detail-&gt;&gt;'diskon')::INT = 0) THEN 0 ELSE (SELECT &quot;refJenisDiskonPersen&quot; FROM ref_jenis_diskon WHERE &quot;refJenisDiskonId&quot; = 1) END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan,
+	LATERAL JSON_ARRAY_ELEMENTS ( keu_tagihan.&quot;tagihDetail&quot; -&gt; 'data' ) json_line_item,
+	LATERAL JSON_ARRAY_ELEMENTS ( json_line_item -&gt; 'detail' ) detail ( detail )
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = ( detail -&gt;&gt; 'item' ) :: INT 
+WHERE
+	keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN ( SELECT payment.&quot;tahap&quot; FROM function_tampil_payment_all_mhs_tahun(npm,tahun)) 
+	OR ( json_line_item -&gt;&gt; 'tanggalMulai' ) :: TIMESTAMP &lt;= NOW( ) 
+	AND keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; 'tahap' ) :: INT NOT IN (SELECT payment.&quot;tahap&quot; from function_tampil_payment_all_mhs_tahun(npm,tahun))
+	UNION ALL
+SELECT
+    keu_tagihan_lain.&quot;tagihLainId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan_lain.&quot;tagihLainKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot; AS &quot;jenisBiayaId&quot;,
+		keu_tagihan_lain.&quot;tagihLainTahapBayar&quot; AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		dt_matkul.&quot;matkulNama&quot; AS &quot;mkNama&quot;,
+		(keu_tagihan_lain.&quot;tagihLainNominal&quot;) - (keu_tagihan_lain.&quot;tagihLainDiskon&quot;) AS &quot;nominal&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalMulai&quot; AS &quot;startDate&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; AS &quot;endDate&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranId&quot; AS &quot;tahunAjarId&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranNama&quot; AS &quot;tahunAjar&quot;,
+		keu_tagihan_lain.&quot;tagihLainIsForceToPay&quot; AS &quot;forceToPay&quot;,
+		keu_tagihan_lain.&quot;tagihLainDiskon&quot; AS &quot;diskon&quot;,
+		CASE WHEN (keu_tagihan_lain.&quot;tagihLainDiskon&quot; = 0) THEN 0 ELSE 0 END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan_lain
+	LEFT JOIN dt_tahun_ajaran ON dt_tahun_ajaran.&quot;tahunAjaranId&quot; = keu_tagihan_lain.&quot;tagihLainTahunAjaran&quot;
+	LEFT JOIN keu_tarif_biaya_lain ON keu_tarif_biaya_lain.&quot;tarifLainId&quot; = keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot;
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = keu_tarif_biaya_lain.&quot;tarifLainJenisBiayaId&quot;
+	LEFT JOIN setting_matkul_tawarkan ON setting_matkul_tawarkan.&quot;setMatkulTawarId&quot; = keu_tarif_biaya_lain.&quot;tarifLainMatkulTawarId&quot;
+	LEFT JOIN setting_matkul_kurikulum ON setting_matkul_kurikulum.&quot;setMatkulKurikulumId&quot; = setting_matkul_tawarkan.&quot;setMatkulTawarMatkulKurikulumId&quot;
+	LEFT JOIN dt_matkul ON dt_matkul.&quot;matkulId&quot; = setting_matkul_kurikulum.&quot;setMatkulKurikulumMatkulId&quot;
+WHERE
+	keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+	OR keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; &lt;= NOW() AND keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm 
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = '0'
+CONTEXT:  PL/pgSQL function function_tampil_tagihan(text,text) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;payment&quot;
+LINE 26: ...on_line_item -&gt;&gt; \'tahap\' ) :: INT NOT IN ( SELECT payment.&quot;t...
+                                                              ^
+QUERY:  SELECT
+		keu_tagihan.&quot;tagihId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan.&quot;tagihKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan.&quot;tagihMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		(detail-&gt;&gt;\'item\')::INT AS &quot;jenisBiayaId&quot;,
+		(json_line_item-&gt;&gt;\'tahap\')::INT AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		(SELECT concat(\'\')::varchar) AS &quot;mkNama&quot;,
+		((detail -&gt;&gt;\'nominal\')::BIGINT) - ((detail-&gt;&gt;\'diskon\')::INT) AS &quot;nominal&quot;,
+		(json_line_item-&gt;&gt;\'tanggalMulai\')::TIMESTAMP AS &quot;startDate&quot;,
+		(json_line_item-&gt;&gt;\'tanggalSelesai\')::TIMESTAMP AS &quot;endDate&quot;,
+		(json_line_item-&gt;&gt;\'tahunAjar\') ::INT AS &quot;tahunAjarId&quot;,
+		(SELECT dt_tahun_ajaran.&quot;tahunAjaranNama&quot; FROM dt_tahun_ajaran WHERE dt_tahun_ajaran.&quot;tahunAjaranId&quot; = (json_line_item-&gt;&gt;\'tahunAjar\') ::INT) AS &quot;tahunAjar&quot;,
+		(json_line_item-&gt;&gt;\'isForceToPay\')::BIT AS &quot;forceToPay&quot;,
+		(detail-&gt;&gt;\'diskon\')::INT AS &quot;diskon&quot;,
+		CASE WHEN ((detail-&gt;&gt;\'diskon\')::INT = 0) THEN 0 ELSE (SELECT &quot;refJenisDiskonPersen&quot; FROM ref_jenis_diskon WHERE &quot;refJenisDiskonId&quot; = 1) END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan,
+	LATERAL JSON_ARRAY_ELEMENTS ( keu_tagihan.&quot;tagihDetail&quot; -&gt; \'data\' ) json_line_item,
+	LATERAL JSON_ARRAY_ELEMENTS ( json_line_item -&gt; \'detail\' ) detail ( detail )
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = ( detail -&gt;&gt; \'item\' ) :: INT 
+WHERE
+	keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; \'tahap\' ) :: INT NOT IN ( SELECT payment.&quot;tahap&quot; FROM function_tampil_payment_all_mhs_tahun(npm,tahun)) 
+	OR ( json_line_item -&gt;&gt; \'tanggalMulai\' ) :: TIMESTAMP &lt;= NOW( ) 
+	AND keu_tagihan.&quot;tagihMahasiswaNpm&quot; = npm 
+	AND keu_tagihan.&quot;tagihTahun&quot; = tahun 
+	AND ( json_line_item -&gt;&gt; \'tahap\' ) :: INT NOT IN (SELECT payment.&quot;tahap&quot; from function_tampil_payment_all_mhs_tahun(npm,tahun))
+	UNION ALL
+SELECT
+    keu_tagihan_lain.&quot;tagihLainId&quot; AS &quot;idTagihan&quot;,
+		keu_tagihan_lain.&quot;tagihLainKodeBayar&quot; AS &quot;kodeBayar&quot;,
+		keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; AS &quot;mahasiswaNpm&quot;,
+		keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot; AS &quot;jenisBiayaId&quot;,
+		keu_tagihan_lain.&quot;tagihLainTahapBayar&quot; AS &quot;tahap&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaKode&quot; AS &quot;jenisBiayaKode&quot;,
+		ref_jenis_biaya.&quot;refJenisBiayaNama&quot; AS &quot;jenisBiayaNama&quot;,
+		dt_matkul.&quot;matkulNama&quot; AS &quot;mkNama&quot;,
+		(keu_tagihan_lain.&quot;tagihLainNominal&quot;) - (keu_tagihan_lain.&quot;tagihLainDiskon&quot;) AS &quot;nominal&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalMulai&quot; AS &quot;startDate&quot;,
+		keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; AS &quot;endDate&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranId&quot; AS &quot;tahunAjarId&quot;,
+		dt_tahun_ajaran.&quot;tahunAjaranNama&quot; AS &quot;tahunAjar&quot;,
+		keu_tagihan_lain.&quot;tagihLainIsForceToPay&quot; AS &quot;forceToPay&quot;,
+		keu_tagihan_lain.&quot;tagihLainDiskon&quot; AS &quot;diskon&quot;,
+		CASE WHEN (keu_tagihan_lain.&quot;tagihLainDiskon&quot; = 0) THEN 0 ELSE 0 END AS &quot;diskonPersen&quot;
+FROM
+	keu_tagihan_lain
+	LEFT JOIN dt_tahun_ajaran ON dt_tahun_ajaran.&quot;tahunAjaranId&quot; = keu_tagihan_lain.&quot;tagihLainTahunAjaran&quot;
+	LEFT JOIN keu_tarif_biaya_lain ON keu_tarif_biaya_lain.&quot;tarifLainId&quot; = keu_tagihan_lain.&quot;tagihLainJenisBiayaId&quot;
+	LEFT JOIN ref_jenis_biaya ON ref_jenis_biaya.&quot;refJenisBiayaId&quot; = keu_tarif_biaya_lain.&quot;tarifLainJenisBiayaId&quot;
+	LEFT JOIN setting_matkul_tawarkan ON setting_matkul_tawarkan.&quot;setMatkulTawarId&quot; = keu_tarif_biaya_lain.&quot;tarifLainMatkulTawarId&quot;
+	LEFT JOIN setting_matkul_kurikulum ON setting_matkul_kurikulum.&quot;setMatkulKurikulumId&quot; = setting_matkul_tawarkan.&quot;setMatkulTawarMatkulKurikulumId&quot;
+	LEFT JOIN dt_matkul ON dt_matkul.&quot;matkulId&quot; = setting_matkul_kurikulum.&quot;setMatkulKurikulumMatkulId&quot;
+WHERE
+	keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = \'0\'
+	OR keu_tagihan_lain.&quot;tagihLainTanggalSelesai&quot; &lt;= NOW() AND keu_tagihan_lain.&quot;tagihLainMahasiswaNpm&quot; = npm 
+	AND dt_tahun_ajaran.&quot;tahunAjaranKode&quot; = tahun AND &quot;tagihLainIsPaid&quot; = \'0\'
+CONTEXT:  PL/pgSQL function function_tampil_tagihan(text,text) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_tagihan(\'2207210067\', \'2022\')
+ORDER BY "tahap" ASC', [], false)
+ 6 ROOTPATH/modules/KeuTeller/Models/KeuTellerModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(71): Modules\KeuTeller\Models\KeuTellerModel->getTagihan([...])
+ 8 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-15 12:01:58 --> Invalid argument supplied for foreach()
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 198.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 198, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-15 12:02:04 --> Invalid argument supplied for foreach()
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 198.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 198, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-15 17:02:46 --> Invalid argument supplied for foreach()
+in ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php on line 198.
+ 1 ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'ROOTPATH/modules/Mahasiswa/Controllers/Mahasiswa.php', 198, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Mahasiswa\Controllers\Mahasiswa->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Mahasiswa\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

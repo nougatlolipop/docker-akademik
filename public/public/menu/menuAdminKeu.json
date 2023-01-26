@@ -1,0 +1,161 @@
+[{
+        "id": "1",
+        "nama": "Tarif",
+        "parent": "0",
+        "level": "title",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-file-invoice-dollar",
+        "pages": ""
+    },
+    {
+        "id": "2",
+        "nama": "Biaya Pokok",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-money-bill-wave",
+        "pages": "/keuTarifPokok"
+    },
+    {
+        "id": "3",
+        "nama": "Biaya Tambahan",
+        "parent": "1",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-money-bill-wave-alt",
+        "pages": "/keuTarifTambahan"
+    },
+    {
+        "id": "4",
+        "nama": "Setting",
+        "parent": "0",
+        "level": "title",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-cogs",
+        "pages": ""
+    },
+    {
+        "id": "14",
+        "nama": "Tahap Pembayaran",
+        "parent": "4",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-list-ol",
+        "pages": "/keuTahap"
+    },
+    {
+        "id": "4",
+        "nama": "Diskon Personal",
+        "parent": "4",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-tag",
+        "pages": "/keuDiskonPersonal"
+    },
+    {
+        "id": "5",
+        "nama": "Tunggakan",
+        "parent": "0",
+        "level": "title",
+        "type": "with-child",
+        "status": true,
+        "icon": "las la-ban",
+        "pages": ""
+    },
+    {
+        "id": "6",
+        "nama": "Tunggakan Mahasiswa",
+        "parent": "5",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-times",
+        "pages": "/keuTunggakanMhs"
+    },
+    {
+        "id": "7",
+        "nama": "Detail Tunggakan",
+        "parent": "5",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-coins",
+        "pages": "/keuTunggakanDetail"
+    },
+    {
+        "id": "8",
+        "nama": "Total Tunggakan",
+        "parent": "5",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-money-check",
+        "pages": "/keuTunggakanTotal"
+    },
+    {
+        "id": "9",
+        "nama": "Teller",
+        "parent": "0",
+        "level": "title",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-astronaut",
+        "pages": "/keuTeller"
+    },
+    {
+        "id": "10",
+        "nama": "Pembayaran",
+        "parent": "0",
+        "level": "title",
+        "type": "with-child",
+        "status": true,
+        "icon": "lar la-check-square",
+        "pages": ""
+    },
+    {
+        "id": "11",
+        "nama": "Pembayaran Mahasiswa",
+        "parent": "10",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-user-check",
+        "pages": "/keuBayarMhs"
+    },
+    {
+        "id": "12",
+        "nama": "Detail Pembayaran",
+        "parent": "10",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-coins",
+        "pages": "/keuBayarDetail"
+    },
+    {
+        "id": "12",
+        "nama": "Total Pembayaran",
+        "parent": "10",
+        "level": "parent",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-money-check",
+        "pages": "/keuBayarTotal"
+    },
+    {
+        "id": "13",
+        "nama": "Saldo Dompet",
+        "parent": "0",
+        "level": "title",
+        "type": "no-child",
+        "status": true,
+        "icon": "las la-wallet",
+        "pages": "/keuSaving"
+    }
+]

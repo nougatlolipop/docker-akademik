@@ -1,0 +1,104 @@
+CRITICAL - 2023-01-19 09:46:12 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 243.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanLain()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:47:58 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 243.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanLain()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:48:25 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 243.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanLain()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:51:13 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:52:33 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:55:56 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:57:22 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:57:28 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 09:58:17 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 10:00:15 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 10:05:20 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 10:10:49 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-19 10:12:32 --> Undefined offset: 0
+in ROOTPATH/modules/Tagihan/Controllers/Tagihan.php on line 201.
+ 1 ROOTPATH/modules/Tagihan/Controllers/Tagihan.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Tagihan/Controllers/Tagihan.php', 201, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): Modules\Tagihan\Controllers\Tagihan->ubahTagihanHer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Tagihan\Controllers\Tagihan))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

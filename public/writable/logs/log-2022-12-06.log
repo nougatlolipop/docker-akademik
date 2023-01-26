@@ -1,0 +1,47 @@
+ERROR - 2022-12-06 08:46:06 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Handlers/DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+#4 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#5 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(918): session_start()
+#6 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+#7 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(665): CodeIgniter\Session\Session->start()
+#8 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#9 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#10 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#11 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+#12 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#13 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+#14 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#15 /Users/ivan/Codeigniter/umsu-academy/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#16 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#17 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#18 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 /Users/ivan/Codeigniter/umsu-academy/public/index.php(55): CodeIgniter\CodeIgniter->run()
+#20 /Users/ivan/Codeigniter/umsu-academy/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#21 {main}
+CRITICAL - 2022-12-06 08:46:06 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(918): session_start()
+ 4 SYSTEMPATH/Session/Session.php(240): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+12 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+13 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+14 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+15 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+16 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
